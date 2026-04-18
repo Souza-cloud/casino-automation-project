@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.1 on win32)" generated="2026-04-19T00:37:27.725372" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests">
+<suite id="s1-s1" name="Casino Tests" source="C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests\casino_tests.robot">
+<test id="s1-s1-t1" name="Open Casino Website" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-19T00:37:27.971469" level="INFO">Opening browser 'chrome' to base url 'https://netent.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-19T00:37:27.970792" elapsed="3.201253"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-19T00:37:31.176392" elapsed="0.456699"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-04-19T00:37:33.040504" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-04-19T00:37:31.633871" elapsed="1.407148"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-19T00:37:36.042854" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-19T00:37:33.041777" elapsed="3.001411"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-19T00:37:36.044062" elapsed="2.396203"/>
+</kw>
+<status status="PASS" start="2026-04-19T00:37:27.969980" elapsed="10.470826"/>
+</test>
+<status status="PASS" start="2026-04-19T00:37:27.762497" elapsed="10.679051"/>
+</suite>
+<status status="PASS" start="2026-04-19T00:37:27.726879" elapsed="10.715659"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Casino Tests" id="s1-s1" pass="1" fail="0" skip="0">Tests.Casino Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
