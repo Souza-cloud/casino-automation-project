@@ -1,92 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.13.1 on win32)" generated="2026-06-20T18:47:33.972099" rpa="false" schemaversion="5">
-<suite id="s1" name="Casino Tests" source="C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests\casino_tests.robot">
-<test id="s1-t1" name="Open Casino Website" line="7">
+<robot generator="Robot 7.4.2 (Python 3.13.1 on win32)" generated="2026-06-20T20:31:23.595031" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests">
+<suite id="s1-s1" name="Casino Tests" source="C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests\casino_tests.robot">
+<test id="s1-s1-t1" name="Open Casino Website" line="7">
 <kw name="Open Casino Site" owner="casino_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-20T18:47:34.714583" level="INFO">Opening browser 'chrome' to base url 'https://netent.com/'.</msg>
+<msg time="2026-06-20T20:31:24.386883" level="INFO">Opening browser 'chrome' to base url 'https://netent.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-20T18:47:34.714315" elapsed="6.310026"/>
+<status status="PASS" start="2026-06-20T20:31:24.386585" elapsed="11.315389"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-06-20T18:47:41.025077" elapsed="1.023061"/>
+<status status="PASS" start="2026-06-20T20:31:35.706188" elapsed="0.426210"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2026-06-20T18:47:42.048898" elapsed="0.001012"/>
+<status status="PASS" start="2026-06-20T20:31:36.133109" elapsed="0.011975"/>
 </kw>
-<status status="PASS" start="2026-06-20T18:47:34.713306" elapsed="7.336847"/>
+<status status="PASS" start="2026-06-20T20:31:24.385184" elapsed="11.761452"/>
 </kw>
 <kw name="Click Games Menu" owner="casino_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-20T18:47:42.052495" level="INFO">Clicking element 'xpath=/html/body/div/div/div/div[2]/div[2]/div/div/a/img'.</msg>
+<msg time="2026-06-20T20:31:36.162211" level="INFO">Clicking element 'xpath=/html/body/div/div/div/div[2]/div[2]/div/div/a/img'.</msg>
 <arg>xpath=/html/body/div/div/div/div[2]/div[2]/div/div/a/img</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T18:47:42.051630" elapsed="1.872965"/>
+<status status="PASS" start="2026-06-20T20:31:36.160479" elapsed="5.973655"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2026-06-20T18:47:43.925732" elapsed="2.028240"/>
+<status status="PASS" start="2026-06-20T20:31:42.151176" elapsed="2.189794"/>
 </kw>
 <kw name="Wait Until Location Contains" owner="SeleniumLibrary">
 <arg>${URL2}</arg>
 <doc>Waits until the current URL contains ``expected``.</doc>
-<status status="PASS" start="2026-06-20T18:47:45.954310" elapsed="3.033083"/>
+<status status="PASS" start="2026-06-20T20:31:44.342905" elapsed="12.835844"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2026-06-20T18:47:49.501955" level="INFO">${current_url} = https://playin.com/games/divine-fortune-gold</msg>
+<msg time="2026-06-20T20:31:57.836187" level="INFO">${current_url} = https://playin.com/games/divine-fortune-gold</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2026-06-20T18:47:48.988117" elapsed="0.514069"/>
+<status status="PASS" start="2026-06-20T20:31:57.193569" elapsed="0.649434"/>
 </kw>
-<status status="PASS" start="2026-06-20T18:47:42.050921" elapsed="7.451802"/>
+<status status="PASS" start="2026-06-20T20:31:36.159046" elapsed="21.752356"/>
 </kw>
 <kw name="Open First Game" owner="casino_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-20T18:47:49.505804" level="INFO">Clicking element 'xpath=/html/body/div/div/div/div[2]/div/main/div[2]/div/div/div[2]/div[1]/div[1]/div[2]/button[1]'.</msg>
+<msg time="2026-06-20T20:31:58.297244" level="INFO">Clicking element 'xpath=/html/body/div/div/div/div[2]/div/main/div[2]/div/div/div[2]/div[1]/div[1]/div[2]/button[1]'.</msg>
 <arg>xpath=/html/body/div/div/div/div[2]/div/main/div[2]/div/div/div[2]/div[1]/div[1]/div[2]/button[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T18:47:49.505223" elapsed="1.135530"/>
+<status status="PASS" start="2026-06-20T20:31:58.274469" elapsed="2.992394"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<msg time="2026-06-20T18:47:56.404085" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-06-20T18:47:56.414382" level="FAIL">Element '//canvas' did not appear in 5 seconds.</msg>
 <arg>//canvas</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="FAIL" start="2026-06-20T18:47:50.642041" elapsed="5.832563">Element '//canvas' did not appear in 5 seconds.</status>
+<status status="PASS" start="2026-06-20T20:32:01.283301" elapsed="1.663955"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-06-20T20:32:02.979681" level="FAIL">Keyword 'SeleniumLibrary.Wait Until Element Is Visible' expected 1 to 3 arguments, got 0.</msg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-06-20T18:47:56.475444" elapsed="0.000072"/>
+<status status="FAIL" start="2026-06-20T20:32:02.948035" elapsed="0.034150">Keyword 'SeleniumLibrary.Wait Until Element Is Visible' expected 1 to 3 arguments, got 0.</status>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" start="2026-06-20T18:47:56.476315" elapsed="0.000061"/>
+<status status="NOT RUN" start="2026-06-20T20:32:02.991121" elapsed="0.000246"/>
 </kw>
-<status status="FAIL" start="2026-06-20T18:47:49.504417" elapsed="6.973345">Element '//canvas' did not appear in 5 seconds.</status>
+<status status="FAIL" start="2026-06-20T20:31:58.249593" elapsed="4.755376">Keyword 'SeleniumLibrary.Wait Until Element Is Visible' expected 1 to 3 arguments, got 0.</status>
 </kw>
 <kw name="Take Screenshot" owner="casino_keywords">
-<status status="NOT RUN" start="2026-06-20T18:47:56.481775" elapsed="0.000081"/>
+<status status="NOT RUN" start="2026-06-20T20:32:03.039233" elapsed="0.000607"/>
 </kw>
-<status status="FAIL" start="2026-06-20T18:47:34.712580" elapsed="21.773400">Element '//canvas' did not appear in 5 seconds.</status>
+<status status="FAIL" start="2026-06-20T20:31:24.384488" elapsed="38.688462">Keyword 'SeleniumLibrary.Wait Until Element Is Visible' expected 1 to 3 arguments, got 0.</status>
 </test>
-<status status="FAIL" start="2026-06-20T18:47:33.976327" elapsed="22.525185"/>
+<status status="FAIL" start="2026-06-20T20:31:23.686066" elapsed="39.461161"/>
+</suite>
+<suite id="s1-s2" name="GET users" source="C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests\GET_users.robot">
+<kw name="Create API Session" type="SETUP">
+<msg time="2026-06-20T20:32:03.526376" level="FAIL">No keyword with name 'Create API Session' found.</msg>
+<status status="FAIL" start="2026-06-20T20:32:03.525636" elapsed="0.000903">No keyword with name 'Create API Session' found.</status>
+</kw>
+<test id="s1-s2-t1" name="Verify Users Endpoint" line="7">
+<status status="FAIL" start="2026-06-20T20:32:03.529699" elapsed="0.006487">Parent suite setup failed:
+No keyword with name 'Create API Session' found.</status>
+</test>
+<status status="FAIL" start="2026-06-20T20:32:03.189732" elapsed="0.353619">Suite setup failed:
+No keyword with name 'Create API Session' found.</status>
+</suite>
+<status status="FAIL" start="2026-06-20T20:31:23.597893" elapsed="39.949333"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Casino Tests" id="s1" pass="0" fail="1" skip="0">Casino Tests</stat>
+<stat name="Tests" id="s1" pass="0" fail="2" skip="0">Tests</stat>
+<stat name="Casino Tests" id="s1-s1" pass="0" fail="1" skip="0">Tests.Casino Tests</stat>
+<stat name="GET users" id="s1-s2" pass="0" fail="1" skip="0">Tests.GET users</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2026-06-20T20:32:03.476760" level="ERROR">Error in file 'C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests\GET_users.robot' on line 2: Resource file '..\..\resources\api_keywords.robot' does not exist.</msg>
 </errors>
 </robot>
