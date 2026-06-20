@@ -24,8 +24,10 @@ Log    Current URL: ${current_url}
     Capture Page Screenshot
 
 Open First Game
-    Click Element    xpath=(//div[contains(@class,'game')])[1]
+    Click Element    xpath=/html/body/div/div/div/div[2]/div/main/div[2]/div/div/div[2]/div[1]/div[1]/div[2]/button[1]
     Wait Until Page Contains Element    //canvas
+    Wait Until Element Is Visible   
+    Capture Page Screenshot
 
 Scroll Down Page
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
