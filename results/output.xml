@@ -1,49 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.13.1 on win32)" generated="2026-05-09T12:49:01.317752" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests">
-<suite id="s1-s1" name="Casino Tests" source="C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests\casino_tests.robot">
-<test id="s1-s1-t1" name="Open Casino Website" line="7">
+<robot generator="Robot 7.4.2 (Python 3.13.1 on win32)" generated="2026-06-20T16:03:21.312169" rpa="false" schemaversion="5">
+<suite id="s1" name="Casino Tests" source="C:\Users\Souza Bila\Documents\remote work\casino-automation-project\tests\casino_tests.robot">
+<test id="s1-t1" name="Open Casino Website" line="7">
 <kw name="Open Casino Site" owner="casino_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-05-09T12:49:01.612645" level="INFO">Opening browser 'chrome' to base url 'https://netent.com/'.</msg>
+<msg time="2026-06-20T16:03:21.854191" level="INFO">Opening browser 'chrome' to base url 'https://netent.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-05-09T12:49:01.612399" elapsed="3.531887"/>
+<status status="PASS" start="2026-06-20T16:03:21.853941" elapsed="4.130943"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-05-09T12:49:05.144687" elapsed="0.434918"/>
+<status status="PASS" start="2026-06-20T16:03:25.985581" elapsed="0.367684"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2026-05-09T12:49:05.579969" elapsed="0.000444"/>
+<status status="PASS" start="2026-06-20T16:03:26.353581" elapsed="0.000895"/>
 </kw>
-<status status="PASS" start="2026-05-09T12:49:01.611741" elapsed="3.968832"/>
+<status status="PASS" start="2026-06-20T16:03:21.853298" elapsed="4.501461"/>
 </kw>
 <kw name="Click Games Menu" owner="casino_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-09T12:49:05.583077" level="INFO">Clicking element 'xpath=//button[contains(text(),'Games')]'.</msg>
-<msg time="2026-05-09T12:49:07.041531" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-05-09T12:49:07.041772" level="FAIL">Element with locator 'xpath=//button[contains(text(),'Games')]' not found.</msg>
+<msg time="2026-06-20T16:03:26.356955" level="INFO">Clicking element 'xpath=//button[contains(text(),'Games')]'.</msg>
+<msg time="2026-06-20T16:03:28.651992" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-20T16:03:28.652363" level="FAIL">Element with locator 'xpath=//button[contains(text(),'Games')]' not found.</msg>
 <arg>xpath=//button[contains(text(),'Games')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-05-09T12:49:05.582209" elapsed="1.463138">Element with locator 'xpath=//button[contains(text(),'Games')]' not found.</status>
+<status status="FAIL" start="2026-06-20T16:03:26.356375" elapsed="3.056666">Element with locator 'xpath=//button[contains(text(),'Games')]' not found.</status>
 </kw>
-<status status="FAIL" start="2026-05-09T12:49:05.581369" elapsed="1.464229">Element with locator 'xpath=//button[contains(text(),'Games')]' not found.</status>
+<status status="FAIL" start="2026-06-20T16:03:26.355727" elapsed="3.057770">Element with locator 'xpath=//button[contains(text(),'Games')]' not found.</status>
 </kw>
-<kw name="Open First Game" owner="casino_keywords">
-<status status="NOT RUN" start="2026-05-09T12:49:07.046224" elapsed="0.000066"/>
-</kw>
-<kw name="Take Screenshot" owner="casino_keywords">
-<status status="NOT RUN" start="2026-05-09T12:49:07.046838" elapsed="0.000094"/>
-</kw>
-<status status="FAIL" start="2026-05-09T12:49:01.611024" elapsed="5.436720">Element with locator 'xpath=//button[contains(text(),'Games')]' not found.</status>
+<status status="FAIL" start="2026-06-20T16:03:21.852563" elapsed="7.561845">Element with locator 'xpath=//button[contains(text(),'Games')]' not found.</status>
 </test>
-<status status="FAIL" start="2026-05-09T12:49:01.352679" elapsed="5.696497"/>
-</suite>
-<status status="FAIL" start="2026-05-09T12:49:01.319329" elapsed="5.731483"/>
+<status status="FAIL" start="2026-06-20T16:03:21.313603" elapsed="8.103644"/>
 </suite>
 <statistics>
 <total>
@@ -52,8 +43,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
-<stat name="Casino Tests" id="s1-s1" pass="0" fail="1" skip="0">Tests.Casino Tests</stat>
+<stat name="Casino Tests" id="s1" pass="0" fail="1" skip="0">Casino Tests</stat>
 </suite>
 </statistics>
 <errors>
