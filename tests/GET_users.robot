@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ../resources/api_keywords.robot
 
-Suite Setup    Create API Session
+Suite Setup     Create Session
 
 *** Test Cases ***
 Verify Users Endpoint

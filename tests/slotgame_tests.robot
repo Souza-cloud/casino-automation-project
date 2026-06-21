@@ -1,11 +1,12 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource   ../resources/casino_keywords.robot
+Resource   ../resources/slotgame_keywords.robot
 *** Variables ***
 
 *** Test Cases ***
-Open Casino Website
-    # [Tags]    smoke    ui    casino
+Play Slot Game
+     [Tags]      slotgame
+        Open Game Site
     # Open Casino Site
     # Click Games Menu
     # Open First Game

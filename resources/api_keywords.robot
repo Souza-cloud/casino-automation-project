@@ -5,7 +5,6 @@ Library    RequestsLibrary
 ${BASE_URL}    https://reqres.in
 
 *** Keywords ***
-
 Create API Session
     Create Session    reqres    ${BASE_URL}
 
