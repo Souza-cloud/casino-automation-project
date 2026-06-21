@@ -30,7 +30,7 @@ Open First Game
     Set Selenium Speed    0.5s
     Capture Page Screenshot
     Sleep   5s
-    Click Element    xpath=/html/body/div[4]/div/div/div[2]
+    Click Element    xpath=//*[@id="canvasAnimationManager"]
 
 Scroll Down Page
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
