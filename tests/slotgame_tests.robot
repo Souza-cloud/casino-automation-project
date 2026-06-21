@@ -7,12 +7,9 @@ Resource   ../resources/slotgame_keywords.robot
 Play Slot Game
      [Tags]      slotgame
         Open Game Site
-    # Open Casino Site
-    # Click Games Menu
-    # Open First Game
+    # Set Bet Amount
+    # Play Game round
+    # Open Game Paytables
+    # Open Game rules
     # Take Screenshot
-    # # Click Spin Button
-    # Scroll Down Page
-    # Open Fullscreen Mode
-    # Take Screenshot
-    # Close Browser
+   

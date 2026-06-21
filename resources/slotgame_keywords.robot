@@ -11,6 +11,13 @@ ${BROWSER}    chrome
 Open Game Site
     Open Browser    ${GAME}    ${BROWSER}
     Maximize Browser Window
-    Set Selenium Speed    3s
+    Sleep   5s
+    # Set Selenium Speed    3s
+    Click Element    xpath=/html/body/div[3]/div/div[2]/div[2]/div/button[2]
+    Sleep   10s
+    Capture Page Screenshot
+    Click Element    xpath=/html/body/div[4]/div/div/div[2]
+    Sleep   5s
+    Capture Page Screenshot
    
 
