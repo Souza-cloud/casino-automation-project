@@ -5,9 +5,10 @@ Resource   ../resources/casino_keywords.robot
 
 *** Test Cases ***
 Open Casino Website
+    [Tags]              casino
     Open Casino Site
-    # Click Games Menu
-    # Open First Game
+    Click Games Menu
+    Open First Game
     # Take Screenshot
     # # Click Spin Button
     # Scroll Down Page

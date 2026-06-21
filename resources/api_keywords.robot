@@ -5,12 +5,10 @@ Library    RequestsLibrary
 ${BASE_URL}    https://reqres.in
 
 *** Keywords ***
+
 Create API Session
     Create Session    reqres    ${BASE_URL}
 
 Get Users
-    ${response}=    GET On Session
-    reqres
-    /api/users?page=2
-
+    ${response}=    GET On Session    reqres    /api/users?page=2
     RETURN    ${response}
